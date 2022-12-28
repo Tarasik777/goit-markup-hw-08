@@ -1,0 +1,82 @@
+/* Секція клієнти */
+.customers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+
+}
+
+.customers__section {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-txt-color);
+    margin-bottom: 30px;
+
+    @media screen and (min-width:1200px) {
+        font-size: 36px;
+        line-height: 1.16;
+
+        margin-bottom: 50px;
+    }
+}
+
+.customers__card {
+    // display: flex;
+    justify-content: center;
+
+    --items: 2;
+
+    @media screen and (min-width:768px) {
+        --items: 3;
+    }
+
+    @media screen and (min-width:1200px) {
+        --items: 6;
+    }
+}
+
+.customers__list {
+    display: flex;
+    justify-content: center;
+}
+
+.customers__list:not(:last-child) {
+    // margin-right: 30px;
+}
+
+.customers__link {
+    display: flex;
+    width: 210px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    fill: #afb1b8;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    transition: fill var(--anim), border-color var(--anim);
+
+    @media screen and (min-width:768px) {
+        width: 226px;
+        height: 92px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 170px;
+        height: 92px;
+    }
+
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-txt-color);
+        fill: var(--accent-txt-color);
+    }
+}

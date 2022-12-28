@@ -1,0 +1,14 @@
+:root {
+    /* Фон */
+    --main-font: "Roboto";
+    --secondary-font: "Raleway";
+    /* Колір тексту*/
+    --main-txt-color: #212121;
+    --accent-txt-color: #2196f3;
+    --grey-txt-color: #757575;
+    /* Інші */
+    --items: 3;
+    --indent: 30px;
+
+    --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

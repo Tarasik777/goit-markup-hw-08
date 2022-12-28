@@ -1,0 +1,118 @@
+/* Секція шапка */
+.hat {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/bg-images/hat_mob.jpg);
+
+    // ретіна екран моб.версія
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/bg-images/hat_mob@2x.jpg);
+    }
+
+    @media screen and (min-width:768px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/bg-images/hat_tab.jpg);
+
+        // ретіна екран таб.версія
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/bg-images/hat_tab@2x.jpg);
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/bg-images/hat_des.jpg);
+
+        // ретіна екран дес.версія
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/bg-images/hat_des@2x.jpg);
+        }
+    }
+}
+
+.main__div {
+    background-color: #2f303a;
+}
+
+.hat__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    @media screen and (min-width:1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
+}
+
+.hat__btn {
+    // display: block;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: var(--accent-txt-color);
+    padding: 10px 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: var(--accent-txt-color);
+    transition: color var(--anim), background-color var(--anim),
+        box-shadow var(--anim), border-radius var(--anim);
+
+
+    &:hover,
+    &:focus {
+        background-color: #1076c7;
+        color: #ffffff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding: 10px 32px;
+    }
+}
